@@ -1,7 +1,7 @@
 /* OVERWRITE PW PROTECTION STYLES */
 div.password-protect {
   height: 100vh;
-  background: #e9ebee;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
