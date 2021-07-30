@@ -13,6 +13,7 @@
     "@mkitio/gatsby-theme-password-protect": "^2.1.2",
     "dotenv": "^8.2.0",
     "gatsby": "^3.0.0",
+    "gatsby-source-filesystem": "^3.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
