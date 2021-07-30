@@ -1,0 +1,54 @@
+/* Footer */
+.css-joiw1l-Footer .css-2e3eq5 {
+  text-align: center;
+  margin: 0px 1rem;
+}
+.css-joiw1l-Footer {
+  width: 100% !important;
+}
+.css-10rkbuf-Footer,
+.css-11ufj4t {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+.css-10rkbuf-Footer {
+  justify-content: center !important;
+  width: 100% !important;
+}
+footer .css-4cffwv {
+  display: block;
+}
+footer .css-vurnku {
+  text-align: center;
+}
+/* Landing Page tiles */
+@media (max-width: 800px) {
+  .css-e38wqp-MainPageSection > div {
+    width: 50% !important;
+    height: 30vh !important;
+  }
+}
+@media screen and (min-width: 40em) {
+  .css-xpey8l {
+    width: 33.33% !important;
+  }
+}
+.css-258g8s-MainPageCollectionBlock {
+  background-color: rgba(72, 51, 142, 0.5);
+  mix-blend-mode: color;
+  mix-blend-mode: hard-light;
+}
+h2.css-1daxv9t-MainPageCollectionBlock {
+  font-size: 5vw;
+}
+@media (min-width: 800px) {
+  h2.css-1daxv9t-MainPageCollectionBlock {
+    font-size: 2vw;
+  }
+  span.css-1xpx5dl-MainPageCollectionBlock {
+    display: none;
+  }
+}
+button.css-1wkcajd-MainPageCollectionBlock {
+  display: none;
+}

@@ -4,6 +4,12 @@ const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/s
 module.exports = {
   plugins: [
     {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: 'shirtcoin' // delete or `undefined` to disable password protection
+      }
+    },
+    {
       resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
       options: {
         shopify: {
@@ -28,13 +34,13 @@ module.exports = {
           reviewsNumberPerPage: 10,
         },
         manifest: {
-          name: 'Gatsby Storefront Demo Store',
-          short_name: 'Gatsby Storefront',
+          name: 'talkshirty2me',
+          short_name: 'TS2M',
           start_url: '/',
           background_color: '#fff',
           theme_color: '#333',
           display: 'standalone',
-          icon: 'src/images/shopping_bag.svg',
+          icon: 'src/images/favicon.png',
           icon_options: {
             purpose: 'any maskable',
           },
@@ -44,23 +50,24 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    siteUrl: 'https://demo.gatsbystorefront.com',
+    siteUrl: 'https://talkshirty2.me',
     gatsbyStorefrontConfig: {
-      storeName: 'Gatsby Storefront',
-      storeDescription: 'Demo store description',
-      email: 'info@gatsbystorefront.com',
-      company: 'Gatsby Storefront Inc.',
-      location: 'New York, NY',
-      address: '1 Centre St.',
-      phone: '+1 (800) 123-1234',
-      workingDays: 'Mon - Fri',
-      workingHours: '8AM - 6PM',
+      storeName: 'talkshirty2me',
+      logo: {
+        url: '/images/talkshirty2me-logo.png',
+        width: '40px',
+        height: '40px'
+      },
+      storeDescription: 'clothes against humanity',
+      email: 'hi@talkshirty2.me',
+      company: 'talkshirty2me llc',
+      location: 'USA',
+      address: '',
+      phone: '',
+      workingDays: '',
+      workingHours: '',
       socialNetworks: [
-        'https://facebook.com',
-        'https://instagram.com',
-        'https://pinterest.com',
-        'https://twitter.com',
-        'https://youtube.com',
+        'https://instagram.com/talkshirty2me',
       ],
       // Payments icons are temporarily disabled, due to large package size and negative impact on Lighthouse 6 performance.
       // Need to find an alternative package to react-payment-icons-inline.
@@ -75,79 +82,62 @@ module.exports = {
         'Line',
         'Viber',
       ],
-      googleAnalyticsId: 'UA-141525658-5',
+      googleAnalyticsId: 'UA-70450292-13',
       //
       // carousel, collection, product
       //
       mainPage: [
         {
-          type: 'carousel',
-          children: [
-            {
-              name: 'Jewelery',
-              type: 'collection',
-              handle: 'jewelery',
-              textColor: 'black',
-              textBgColor: 'white',
-            },
-            {
-              name: 'Apparel',
-              type: 'collection',
-              handle: 'apparel',
-              textColor: 'white',
-              textBgColor: 'primary',
-            },
-            {
-              name: 'Silk Summer Top',
-              type: 'product',
-              handle: 'silk-summer-top',
-              textColor: 'white',
-              textBgColor: 'primary',
-            },
-          ],
-        },
-        {
           type: 'section',
           children: [
             {
-              name: 'Apparel',
+              name: 'Hats',
               type: 'collection',
-              handle: 'apparel',
+              handle: 'hats',
               textColor: 'white',
               textBgColor: 'primary',
             },
             {
-              name: 'Garden',
+              name: 'Shirts',
               type: 'collection',
-              handle: 'garden',
+              handle: 'shirts',
               textColor: 'white',
               textBgColor: 'primary',
             },
-          ],
-        },
-        {
-          type: 'section',
-          children: [
             {
-              name: 'Red Sports Tee',
-              type: 'product',
-              handle: 'red-sports-tee',
-              textColor: 'black',
-              textBgColor: 'white',
+              name: 'Pants',
+              type: 'collection',
+              handle: 'pants',
+              textColor: 'white',
+              textBgColor: 'primary',
             },
             {
-              name: 'Anchor Bracelet Mens',
-              type: 'product',
-              handle: 'leather-anchor',
-              textColor: 'black',
-              textBgColor: 'white',
+              name: 'Jackets',
+              type: 'collection',
+              handle: 'jackets',
+              textColor: 'white',
+              textBgColor: 'primary',
             },
             {
-              name: 'Yellow Sofa',
-              type: 'product',
-              handle: 'yellow-sofa',
-              textColor: 'black',
-              textBgColor: 'white',
+              name: 'Activewear',
+              type: 'collection',
+              handle: 'activewear',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+            {
+              name: 'Swimwear',
+              type: 'collection',
+              handle: 'swimwear',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+            {
+              name: 'Shwag',
+              type: 'collection',
+              handle: 'shwag',
+              textColor: 'white',
+              textBgColor: 'primary',
             },
           ],
         },
@@ -158,191 +148,53 @@ module.exports = {
         type: 'top',
         children: [
           {
-            name: "Women's",
-            type: 'header',
-            handle: '',
-            link: '',
-            children: [
-              {
-                name: 'Apparel',
-                type: 'collection',
-                handle: 'apparel',
-              },
-              {
-                name: 'Jewelery',
-                type: 'collection',
-                handle: 'jewelery',
-              },
-              {
-                name: 'One product',
-                type: 'product',
-                handle: 'red-sports-tee',
-              },
-            ],
+            name: "Hats",
+            type: 'collection',
+            handle: 'hats',
+            link: '/collection/hats',
           },
           {
-            name: "Men's",
-            type: 'header',
-            children: [
-              {
-                name: 'Test',
-                type: 'collection',
-                handle: 'test-collection',
-              },
-              {
-                name: 'Garden',
-                type: 'collection',
-                handle: 'garden',
-              },
-              {
-                name: 'Apparel',
-                type: 'collection',
-                handle: 'apparel',
-              },
-              {
-                name: 'External links',
-                type: 'header',
-                children: [
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                ],
-              },
-            ],
+            name: "Shirts",
+            type: 'collection',
+            handle: 'shirts',
+            link: '/collection/shirts',
+          },
+          {
+            name: "Pants",
+            type: 'collection',
+            handle: 'pants',
+            link: '/collection/pants',
+          },
+          {
+            name: "Jackets",
+            type: 'collection',
+            handle: 'jackets',
+            link: '/collection/jackets',
+          },
+          {
+            name: "Activewear",
+            type: 'collection',
+            handle: 'activewear',
+            link: '/collection/activewear',
+          },
+          {
+            name: "Swimwear",
+            type: 'collection',
+            handle: 'swimwear',
+            link: '/collection/swimwear',
+          },
+          {
+            name: "Shwag",
+            type: 'collection',
+            handle: 'shwag',
+            link: '/collection/shwag',
           },
         ],
       }),
       footerLinks: [
         {
           name: 'About us',
-          link: '/',
+          link: '/about-us',
         },
         {
           name: 'Terms of Service',
@@ -355,10 +207,6 @@ module.exports = {
         {
           name: 'Refunds',
           link: '/policy/refundPolicy',
-        },
-        {
-          name: 'External',
-          link: 'https://amazon.com',
         },
       ],
       locales: 'en-US',
