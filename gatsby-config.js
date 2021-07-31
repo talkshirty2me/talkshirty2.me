@@ -4,12 +4,6 @@ const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/s
 module.exports = {
   plugins: [
     {
-      resolve: '@mkitio/gatsby-theme-password-protect',
-      options: {
-        password: 'shirtcoin' // delete or `undefined` to disable password protection
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -36,9 +30,6 @@ module.exports = {
         },
         product: {
           maxDescriptionSectionsNumber: 10,
-        },
-        reviews: {
-          reviewsNumberPerPage: 10,
         },
         manifest: {
           name: 'talkshirty2me',
@@ -201,7 +192,7 @@ module.exports = {
       footerLinks: [
         {
           name: 'About us',
-          link: '/about-us',
+          link: '/about-us/',
         },
         {
           name: 'Terms of Service',

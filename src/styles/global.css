@@ -1,17 +1,21 @@
 /* Footer */
-.css-joiw1l-Footer .css-2e3eq5 {
+.css-joiw1l-Footer .css-2e3eq5,
+.css-lawcwr span {
   text-align: center;
   margin: 0px 1rem;
 }
-.css-joiw1l-Footer {
+.css-joiw1l-Footer,
+.css-lawcwr {
   width: 100% !important;
 }
 .css-10rkbuf-Footer,
+.css-yg6jqz,
 .css-11ufj4t {
   margin-left: 0px !important;
   padding-left: 0px !important;
 }
-.css-10rkbuf-Footer {
+.css-10rkbuf-Footer,
+.css-yg6jqz {
   justify-content: center !important;
   width: 100% !important;
 }
@@ -23,7 +27,9 @@ footer .css-vurnku {
 }
 /* Landing Page tiles */
 @media (max-width: 800px) {
-  .css-e38wqp-MainPageSection > div {
+  .css-e38wqp-MainPageSection > div,
+  .css-85h6i8 > div,
+  .css-xpey8l {
     width: 50% !important;
     height: 30vh !important;
   }
@@ -33,22 +39,27 @@ footer .css-vurnku {
     width: 33.33% !important;
   }
 }
-.css-258g8s-MainPageCollectionBlock {
+.css-258g8s-MainPageCollectionBlock,
+.css-l03b9p {
   background-color: rgba(72, 51, 142, 0.5);
   mix-blend-mode: color;
   mix-blend-mode: hard-light;
 }
-h2.css-1daxv9t-MainPageCollectionBlock {
+h2.css-1daxv9t-MainPageCollectionBlock,
+h2.css-1ohjpqx {
   font-size: 5vw;
 }
 @media (min-width: 800px) {
-  h2.css-1daxv9t-MainPageCollectionBlock {
+  h2.css-1daxv9t-MainPageCollectionBlock
+  h2.css-1ohjpqx {
     font-size: 2vw;
   }
-  span.css-1xpx5dl-MainPageCollectionBlock {
+  span.css-1xpx5dl-MainPageCollectionBlock,
+  span.css-1n0ghvb {
     display: none;
   }
 }
-button.css-1wkcajd-MainPageCollectionBlock {
+button.css-1wkcajd-MainPageCollectionBlock,
+button.css-13dk4rl {
   display: none;
 }

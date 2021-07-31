@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@gatsbystorefront/gatsby-theme-storefront-shopify": "^5.0.0-beta",
-    "@mkitio/gatsby-theme-password-protect": "^2.1.2",
     "dotenv": "^8.2.0",
     "gatsby": "^3.0.0",
     "gatsby-source-filesystem": "^3.10.0",

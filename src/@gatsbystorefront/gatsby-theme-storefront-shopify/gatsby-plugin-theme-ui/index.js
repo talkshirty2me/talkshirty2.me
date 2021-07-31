@@ -1,6 +1,3 @@
-// Styling overrides I couldn't reverse engineer
-import './styles.css';
-
 const colors = {
   lightPrimary: '#9575cd',
   darkPrimary: '#311b92',
