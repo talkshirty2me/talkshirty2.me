@@ -52,7 +52,7 @@ module.exports = {
     gatsbyStorefrontConfig: {
       storeName: 'talkshirty2me',
       logo: {
-        url: '/images/talkshirty2me-logo.png',
+        url: '/talkshirty2me-logo.png',
         width: '40px',
         height: '40px'
       },
