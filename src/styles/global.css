@@ -25,6 +25,7 @@ footer .css-4cffwv {
 footer .css-vurnku {
   text-align: center;
 }
+
 /* Landing Page tiles */
 @media (max-width: 800px) {
   .css-e38wqp-MainPageSection > div,
@@ -62,4 +63,8 @@ h2.css-1ohjpqx {
 button.css-1wkcajd-MainPageCollectionBlock,
 button.css-13dk4rl {
   display: none;
+}
+.css-a3z7rp {
+  display: inline-block;
+  width: 100%;
 }
