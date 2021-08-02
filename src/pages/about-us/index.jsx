@@ -22,7 +22,7 @@ function AboutUs() {
             <br/><br/>
             So, be patient and provide feedback with us.
             <br/><br/>
-            Nonetheless, this website aims to provide high quality apparel with a high moral mission. That's why 50% of all profits are donated to curated charities. You can find more information about this on the <a href="about-us/transparency/">transparency page</a>.
+            Nonetheless, this website aims to provide high quality apparel with a high moral mission. That's why 50% of all profits are donated to curated charities. You can find more information about this on the <a href="transparency/">transparency page</a>.
             <br/><br/>
             There's no warehouse and no inventory behind this operation. Well there is, but not under TS2M LLC's ownership.
             <br/><br/>
