@@ -187,6 +187,30 @@ module.exports = {
             handle: 'shwag',
             link: '/collection/shwag',
           },
+          {
+            name: "-",
+            type: 'collection',
+            handle: '',
+            link: '',
+          },
+          {
+            name: "About Us",
+            type: 'collection',
+            handle: 'about-us',
+            link: '/about-us/',
+          },
+          {
+            name: "Transparency",
+            type: 'collection',
+            handle: 'transparency',
+            link: '/about-us/transparency',
+          },
+          {
+            name: "Memes",
+            type: 'collection',
+            handle: 'memes',
+            link: 'https://instagram.com/talkshirty2me',
+          },
         ],
       }),
       footerLinks: [

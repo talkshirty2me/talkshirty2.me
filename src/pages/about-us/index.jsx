@@ -16,7 +16,9 @@ function AboutUs() {
             <h2>About Us</h2>
             Hi!
             <br/><br/>
-            This website is a bit of a side project for the owner. It's a one-man show, with some help from other developer friends and minimal to no marketing, mostly meme marketing. It's not a passion project, but a fun one meant to spread some laughs and sell some shirts, but mostly hats.
+            This website is a bit of a side project for the owner. It's a one-man show, with some help from other developer friends and minimal to no marketing, mostly <a href="https://instagram.com/talkshirty2me">meme marketing</a>.
+            <br/><br/>
+            It's not a passion project, but a fun one meant to spread some laughs and sell some shirts, but mostly hats. All the while developing a cutting-edge eCommerce platform.
             <br/><br/>
             So, be patient and provide feedback with us.
             <br/><br/>
