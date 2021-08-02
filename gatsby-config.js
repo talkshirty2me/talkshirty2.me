@@ -191,7 +191,7 @@ module.exports = {
       }),
       footerLinks: [
         {
-          name: 'About us',
+          name: 'About Us',
           link: '/about-us/',
         },
         {
@@ -199,7 +199,7 @@ module.exports = {
           link: '/policy/termsOfService',
         },
         {
-          name: 'Privacy policy',
+          name: 'Privacy Policy',
           link: '/policy/privacyPolicy',
         },
         {
